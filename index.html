@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Roboto:wght@300&family=Sorts+Mill+Goudy:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>NET<span>FLIX</span></h1>
+        <h3>Thank you for signing up to Netflix.Tell me more about yourself..</h3>
+      </header>
+      <div id="form">
+        <form action="./result.html">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <label for="name">Name</label>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="text" name="name" id="name" placeholder="Enter your name"></td>
+              </tr>
+              <tr>
+                <td><label for="age">Your age</label></td>
+              </tr>
+              <tr>
+                <td><input type="number" name="age" id="age"placeholder="Enter your age"></td>
+              </tr>
+              <tr>
+                <td><label for="email">E-mail</label></td>
+              </tr>
+              <tr>
+                <td><input type="email" name="email" id="email" placeholder="Enter your E-mail"></td>
+              </tr>
+              <tr>
+                <td><label for="contents">Content Type</label></td>
+              </tr>
+              <tr>
+                <td><input type="text" name="contents" id="contents" list="datalist"></td>
+              </tr>
+              <tr>
+                <td>
+                  <datalist id="datalist">
+                    <option value="Series">Series</option>
+                    <option value="Movies">Movies</option>
+                    <option value="Documentaries">Documentaries</option>
+                  </datalist>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="checkbox">Movie Types</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="Comedy" id="checkbox"> 
+                  <label for="Comedy">Comedy</label><br> 
+                <input type="checkbox" name="Action" id="Action">
+                <label for="Action">Action</label><br>
+                <input type="checkbox" name="Romance" id="Romance">
+                <label for="Romamce">Romance</label>            
+              </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="radio" name="gender" id="gender">
+                  <label for="Male">Male</label><br>
+                  <input type="radio" name="gender" id="gender">
+                  <label for="female">Female</label><br>
+                  <input type="radio" name="gender" id="gender">
+                  <label for="Other">Other</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="feedback">Feedback</label>
+                  <textarea name="feedback" id="feedback" cols="30" rows="10" resize:none>Ideas worth spreading</textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button id="button">Send</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+
+
+
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
